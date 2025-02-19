@@ -1,8 +1,64 @@
-body{
-    background-color: red;
-    color: white;    
-}
-.configura1{
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     text-align: center;
-    background-color: #DAA520;
+    background-color: #f5f5f5;
 }
+
+/* estilização do header(cabeçalho) */
+header {
+    background-color: #004080;
+    color: #fff;
+    padding: 10px;
+}
+
+/* estilização do menu */
+nav ul {
+    padding: 0;
+    background-color: #0066cc;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* estilizando a seção de pacote */
+.pacote {
+    display: inline-block;
+    width: 300px;
+    background-color: #fff;
+    padding: 10px;
+    margin: 15px;
+    border-radius: 10px;
+    box-shadow:2px 2px 10px rgba(0 ,0 ,0 , 0.2);
+
+    }
+
+    .pacote img{
+        border-radius: 10px;
+    }
+
+    .preco{
+        color: #ff6600;
+        font-size: 18px;
+        font-weight: bold;
+    }
+
+    .footer{
+        background-color: #004080;
+        color: #fff;
+        margin-top: 20px;
+        padding: 10px;
+    }
+    .logo{
+        border-radius: 10px;
+    
+    }
