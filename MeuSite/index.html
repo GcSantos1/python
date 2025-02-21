@@ -3,12 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  rel="stylesheet"  href="style.css" >
-    <title>Onde vou comer?</title>
+    <link rel="stylesheet" href="style.css">
+    <link  rel="stylesheet"  href="carroselmoto.css" >
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="Moto/Logo.avif">
+    <title>Concessionaria</title>
 </head>
 <body>
     <header>
-        <h1></h1>
+        <img src="Moto/Logo.avif" class="logo">
+        <h1>MotoVibe</h1>
+        <p class="titulo">Confira nossas principais promoções</p>
+
     </header>
+    <main>
+        <h2 class="subtitulo">Motos a venda</h2>
+     
+        <section id="carrossel" class="container">
+            <article class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="Moto/Moto 1 azul.avif" alt="Moto azul">
+
+                            <figcaption>
+                                Moto 300 cilindradas
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="Moto/Moto 2 vermelha.avif" alt="Moto vermelha">
+
+                            <figcaption>
+                                Moto 450 cilindradas
+                                
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="Moto/Moto 3 amarela.jpg" alt="Moto amarela">
+
+                            <figcaption>
+                                Moto 250 cilindradas
+                                
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="Moto/moto 4 branca.jpg" alt="Moto branca">
+
+                            <figcaption>
+                                moto 150 cilindradas
+                               
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="Moto/moto 5 preta.avif" alt="Moto preta">
+
+                            <figcaption>
+                                Moto 650 cilindradas
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="Moto/Moto 1 azul.avif" alt="Moto azul"></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="Moto/Moto 2 vermelha.avif" alt="Moto vermelha"></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="Moto/Moto 3 amarela.jpg" alt="Moto amarela"></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="Moto/moto 4 branca.jpg" alt="Moto branca"></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="Moto/moto 5 preta.avif" alt="Moto preta"></label>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
 </body>
+    <footer class="footer">
+        <div class="footer-copy">
+        <p>&copy; 2025 MotoVibe <br>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="footer-contato" id="contato">
+        <h2>Contato</h2>
+        <p>Email: MotoVibe@outlook.com</p>
+        <p>Telefone: (21)4002-8922</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" target="_blank"><img src="Moto/facebook.png"width="30"></a>
+            <a href="#" target="_blank"><img src="Moto/instagram.png" width="30"></a>
+            <a href="#" target="_blank"><img src="Moto/whatsapp.png" width="30" ></a>
+        </div>
+</footer>
 </html>

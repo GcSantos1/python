@@ -1,0 +1,32 @@
+header{
+    text-align: center;
+   font-family: bangers;
+}
+
+.titulo{
+ text-align: center;
+ font-weight: bold;
+ font-size: 40px;
+}
+
+.subtitulo{
+    text-align: center;
+}
+
+.logo{
+    width: 150px;
+    
+}
+
+.footer{
+    background-color: #004080;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;}
+
+    .footer-social img{
+        padding: 10px;
+    }

@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/carrossel.css">
+    <link rel="icon" type="image/x-icon" href="image/icons8-avião-50.png">
     <title>Jornada viagem</title>
 </head>
 
@@ -15,47 +17,175 @@
         <p>Explorando o mundo com você!</p>
     </header>
     <nav>
-    <ul>
-        <li><a href="https://www.rodei.com.br" target="_blank">Blog</a></li>
-        <li><a href="#Pacotes">Pacotes</a></li>
-        <li><a href="#contato">Contatos</a></li>
-    </ul>        
+        <ul>
+            <li><a href="https://www.rodei.com.br" target="_blank">Blog</a></li>
+            <li><a href="#Pacotes">Pacotes</a></li>
+            <li><a href="#contato">Contatos</a></li>
+        </ul>
     </nav>
     <main>
-<section id="sobre">
-    <h2>Sobre nós</h2>
-    <p>Somos uma agência apaixonada por criar viagens inesquecíveis...</p>
-</section>
-<section id="Pacotes">
-    <h2>Ofertas da Semana</h2>
-    <article class="pacote">
-        <img src="image/japao.webp" width="300" height="200" alt="Japão">
-        <h3>Japão</h3>
-        <p>Hotel + Aéreo</p>
-        <p class="preco">R$ 4.000</p>
-    </article>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>Somos uma agência apaixonada por criar viagens inesquecíveis...</p>
+        </section>
 
-    <article class="pacote">
-        <img src="image/china.webp" width="300" height="200" alt="China">
-        <h3>China</h3>
-        <p>Hotel + Aéreo</p>
-        <p class="preco">R$ 5.000</p>
-    </article>
-    <article class="pacote">
-        <img src="image/bangladesh.webp" alt="Bangladesh" width="300" height="200">
-        <h3>Bangladesh</h3>
-        <p>Hotel + Aéreo</p>
-        <p class="preco">R$ 6.000</p>
-    </article>
-</section>
-<section id="contato" class="configura1">
-    <h2>Contato</h2>
-    <p>Email: contato@jornada.com.br</p>
-    <p>Telefone: (21)4002-8922</p>
-</section>
+        <section id="carrossel" class="container">
+            <article class="carousel">
+                <input type="radio" name="slides" checked="checked" id="slide-1">
+                <input type="radio" name="slides" id="slide-2">
+                <input type="radio" name="slides" id="slide-3">
+                <input type="radio" name="slides" id="slide-4">
+                <input type="radio" name="slides" id="slide-5">
+                <input type="radio" name="slides" id="slide-6">
+                <ul class="carousel__slides">
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="https://picsum.photos/id/1041/800/450" alt="Imagem aleatoria fundo simples">
+
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Tim Marshall</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="https://picsum.photos/id/1043/800/450" alt="imagem aleatoria com uma composição natural">
+
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Christian Joudrey</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="https://picsum.photos/id/1044/800/450" alt="imagem de paisagem  com arvores e ceu claro">
+
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Steve Carter</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="https://picsum.photos/id/1045/800/450" alt="">
+
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Aleksandra Boguslawska</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="https://picsum.photos/id/1049/800/450" alt="">
+
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Rosan Harmens</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                    <li class="carousel__slide">
+                        <figure>
+
+                            <img src="https://picsum.photos/id/1052/800/450" alt="">
+
+                            <figcaption>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                <span class="credit">Photo: Annie Spratt</span>
+                            </figcaption>
+                        </figure>
+                    </li>
+                </ul>
+                <ul class="carousel__thumbnails">
+                    <li>
+                        <label for="slide-1"><img src="https://picsum.photos/id/1041/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-2"><img src="https://picsum.photos/id/1043/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-3"><img src="https://picsum.photos/id/1044/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-4"><img src="https://picsum.photos/id/1045/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-5"><img src="https://picsum.photos/id/1049/150/150" alt=""></label>
+                    </li>
+                    <li>
+                        <label for="slide-6"><img src="https://picsum.photos/id/1052/150/150" alt=""></label>
+                    </li>
+                </ul>
+            </article>
+        </section>
+
+
+        <section id="Pacotes">
+            <h2>Ofertas da Semana</h2>
+            <article class="pacote">
+                <img src="image/japao.webp" width="300" height="200" alt="Japão">
+                <h3>Japão</h3>
+                <p>Hotel + Aéreo</p>
+                <p class="preco">R$ 4.000</p>
+            </article>
+
+            <article class="pacote">
+                <img src="image/china.webp" width="300" height="200" alt="China">
+                <h3>China</h3>
+                <p>Hotel + Aéreo</p>
+                <p class="preco">R$ 5.000</p>
+            </article>
+            <article class="pacote">
+                <img src="image/bangladesh.webp" alt="Bangladesh" width="300" height="200">
+                <h3>Bangladesh</h3>
+                <p>Hotel + Aéreo</p>
+                <p class="preco">R$ 6.000</p>
+            </article>
+        </section>
+        <section id="midia">
+            <h2>curta novas experiências</h2>
+            <video controls width="320" height="240" src="videos/video.mp4" type="video/mp4">Seu navegador não suporta a tag video</video>
+            <audio controls>
+                <source src="audios/viagem.mp3" type="audio.mp3">
+            Seu navegador não suporta a tag audio</audio>
+        </section>
     </main>
+    <aside class="mapa">
+        <h3>Onde estamos</h3>
+        <div class="mapa-conteudo">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.263455526748!2d-43.45324822377537!3d-22.755602132487198!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9967a99225f96f%3A0xec20bfc8ff090b46!2sSenac%20Nova%20Igua%C3%A7u!5e0!3m2!1spt-BR!2sbr!4v1740159263799!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+    <adress class="mapa">
+        . Cel. Carlos Matos, 86 <br>
+         Centro Nova Iguaçu <br>
+         Cep 26210-200 
+    </adress>
+    </div>   
+    </aside>
     <footer class="footer">
-        <p>&copy; 2025 Jornada de viagens. Todos os direitos reservados.</p>
+        <div class="footer-copy">
+        <p>&copy; 2025 Jornada de viagens. <br>Todos os direitos reservados.</p>
+        </div>
+
+        <div class="footer-contato" id="contato">
+        <h2>Contato</h2>
+        <p>Email: contato@jornada.com.br</p>
+        <p>Telefone: (21)4002-8922</p>
+        </div>
+        <div class="footer-social">
+            <a href="#" target="_blank"><img src="image/facebook.png"width="30"></a>
+            <a href="#" target="_blank"><img src="image/instagram.png" width="30"></a>
+            <a href="#" target="_blank"><img src="image/whatsapp.png" width="30" ></a>
+        </div>
     </footer>
     <!-- <script src="js/script.js"></script> -->
 </body>
