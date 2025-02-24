@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0;
+    margin-top: 300px;
     padding: 0;
     text-align: center;
     background-color: #f5f5f5;
@@ -119,4 +119,23 @@ nav ul li a {
 
 .footer-social img{
     padding: 10px;
+}
+
+
+    
+.tabela-viagens {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tabela-viagens th, .tabela-viagens td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+.tabela-viagens th {
+    background-color: #0077b6;
+    color: white;
 }
