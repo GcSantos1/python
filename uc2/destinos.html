@@ -16,15 +16,52 @@
         <h1>Jornada viagem</h1>
         <p>Explorando o mundo com você!</p>
     </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="https://www.rodei.com.br" target="_blank">Blog</a></li>
-            <li><a href="index.html#Pacotes">Pacotes</a></li>
-            <li><a href="index.html#contato">Contatos</a></li>
-            <li><a href="destinos.html">Destinos</a></li>
-        </ul>
-    </nav>
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <figure>
+            <img src="image/logo.jfif" width="80" height="80" class="logo">
+        </figure>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link"href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.rodei.com.br">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#Pacotes">Pacotes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contato">Contato</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="destinos.html">Destinos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Sobre nós</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Promoções
+                </a>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Ônibus</a></li>
+                  <li><a class="dropdown-item" href="#">Aéreo</a></li>
+                  <li><a class="dropdown-item" href="#">Cruzeiros</a></li>
+                </ul>
+              </li>
+      
+            </ul>
+          </div>
+        </div>
+      </nav>
     <main>
         <section id="destinos">
             <h2> Tabela de preços</h2>
@@ -62,6 +99,23 @@
             </table>
         </section>
     </main>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalLabel">Sobre nós</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Somos especializados em criar experiências de viagem únicas e personalizadas, oferecendo roteiros que combinam conforto e aventura. Nosso objetivo é proporcionar momentos inesquecíveis, com um atendimento excepcional e viagens que transformam a forma de ver o mundo. Junte-se a nós e descubra novos destinos com tranquilidade e autenticidade!!
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <footer class="footer fixed-bottom">
         <div class="footer-copy">
