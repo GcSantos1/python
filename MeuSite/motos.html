@@ -73,62 +73,64 @@
         </div>
     </nav>
   </header>
+
   <main class="container mt-3">
-    <div class="card text-center">
-      <div class="card-header">
+    <div class="card text-center fundocard">
+      <div class="card-header mb-4 linha">
         <ul class="nav nav-pills card-header-pills justify-content-center">
-          <li class="nav-item">
-            <a class="nav-link active bg-custom me-2 " aria-current="true" href="#" >Novas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link bg-custom me-2" href="#">Seminovas</a>
+          <li class="nav-item bg">
+            <a id="btnNovas" class="nav-link active bg-custom me-2" aria-current="true" href="#">Novas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link bg-custom" href="#">Promoções</a>
-        </li>
-
-        
-            <section class="container">
-              <div class="card-body bg-custom mt-3 mb-3 ">
-                <h5 class="card-title">Condição especial para veículos 0</h5>
-                <p class="card-text">Na compra da sua moto 0KM você vai ganhar desconto no seguro com um dos nossos parceiros.</p>
-              </div>
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="Moto/uri_ifs___M_dfc9705c-5d61-4792-b58a-0de5d7bb010b.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Modelo DK 250 Trail</h5>
-                      <p class="card-text">Modelo perfeito para quem gosta de conforto na estrada e desafios.</p>
-                      <a href="#" class="btn bg-custom">Saiba mais</a>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="Moto/imagem2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Modelo XTZ 250 Lander</h5>
-                      <p class="card-text">Uma moto versátil para trilhas e cidade, com ótimo desempenho.</p>
-                      <a href="#" class="btn bg-custom">Saiba mais</a>
-                    </div>
-                  </div>
-                </div>
-            
-                <div class="col-md-4">
-                  <div class="card">
-                    <img src="Moto/imagem3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Modelo CRF 250F</h5>
-                      <p class="card-text">Ideal para quem quer adrenalina nas trilhas e terrenos difíceis.</p>
-                      <a href="#" class="btn bg-custom">Saiba mais</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </section>
+            <a id="btnSeminovas" class="nav-link bg-custom me-2" href="#">Seminovas</a>
+          </li>
+          <li class="nav-item">
+            <a id="btnPromocoes" class="nav-link bg-custom" href="#">Promoções</a>
+          </li>
         </ul>
       </div>
+      <section class="container">
+        <div class="row justify-content-center" id="cardContainer">
+          <div class="col-md-4">
+            <div class="card imagem mb-3">
+              <img id="cardImage1" src="Moto/XRE.png" class="card-img-top" alt="...">
+              <div >
+              <div class="card-body bg-custom">
+                <h5 id="cardTitle1" class="card-title">Modelo XRE 300</h5>
+                <p id="cardText1" class="card-text text-dark"> Motor: 300cc Flex, injeção eletrônica
+                  Suspensão: Amortecimento de longo curso para qualquer terreno
+                   Tanque: 13,8L para viagens mais longas
+                   Ideal para: Estradas, trilhas e uso urbano</p>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card imagem mb-3">
+              <img id="cardImage2" src="Moto/Lander.png" class="card-img-top" alt="...">
+              <div class="card-body bg-custom">
+                <h5 id="cardTitle2" class="card-title">Modelo XTZ 250 Lander</h5>
+                <p id="cardText2" class="card-text text-dark">Motor: 250cc, injeção eletrônica
+                   Suspensão: Longo curso, ideal para encarar qualquer desafio
+                   Tanque: 13,6L para rodar sem problemas
+                   Ideal para: Trilhas, estradas e uso urbano</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card imagem mb-3">
+              <img id="cardImage3" src="Moto/versys.png" class="card-img-top" alt="...">
+              <div class="card-body bg-custom">
+                <h5 id="cardTitle3" class="card-title">Modelo Vesys 300</h5>
+                <p id="cardText3" class="card-text text-dark">Motor: 300cc bicilíndrico, injeção eletrônica
+                  Suspensão: Ajustada para estabilidade e conforto
+                  Tanque: 17L para maior autonomia
+                  Ideal para: Viagens, estrada e uso urbano</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </main>
   
@@ -166,7 +168,8 @@
     </div>
   </div>
 </div>
-    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="dados.js"></script>
 </body>
 </html>

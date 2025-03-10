@@ -32,6 +32,14 @@ p{
     width: 150px;
 }
 
+.imagem:hover{
+    transform: scale(1.05);
+}
+
+.imagem{
+    width: 100%;
+    border: 1px
+}
 
 /* Navbar */
 .navbar {
@@ -42,13 +50,20 @@ p{
 }
 
 .linha{
-    box-shadow: 0 0 5px 1px black;
+    box-shadow: 0 0 2px 1px black;
     align-content: center;
 
 }
 
 .card{
     box-shadow: top 5px black;
+    margin-left: 10px;
+    margin-right: 10px;
+
+
+}
+.fundocard{
+    background-color: #8d8d8d;
 }
 
 .bg-custom {
@@ -57,8 +72,31 @@ p{
     box-shadow: none !important;
     outline: none !important;
     border-radius: 5px;
+    border-style: solid;
+    text-align: center;
+    
   }
-   
+
+  .bg-custom-body {
+    background-color: #d56728 !important;
+    color: white !important;
+    box-shadow: none !important;
+    outline: none !important;
+    border-radius: 5px;
+    border-color: #8d8d8d;
+    border-style: solid;
+
+  }
+
+  .card-img-top {
+    width: 100%; /* Garante que a imagem ocupe toda a largura do card */
+    height: 300px; /* Define uma altura fixa para todas as imagens */
+    object-fit: cover; /* Ajusta a imagem para preencher a área sem distorcer */
+    display: block;
+  } 
+
+
+
 
 .nav-link {
     color: #fff !important;
@@ -71,6 +109,17 @@ p{
     color: #fff;
     border-bottom: #d56728 1px solid;
 }
+
+.nav-link.active {
+    background-color: #656565 !important;
+    color: white !important;
+  }
+
+
+
+
+
+
 
 /* Carrossel */
 #scene {
