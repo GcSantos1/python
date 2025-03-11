@@ -13,7 +13,7 @@
 </head>
 <body class="fundo">
   <header>
-    <nav class="navbar navbar-expand-lg ">
+    <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,15 +32,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.html">Home</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Motos
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Novas</a></li>
-                            <li><a class="dropdown-item" href="#">Semi-novas</a></li>
-                            <li><a class="dropdown-item" href="#">Promoções</a></li>
-                        </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" href="motos.html">Motos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="modelos.html">Modelos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -48,15 +44,10 @@
                         </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">Manutenção</a></li>
-                            <li><a class="dropdown-item" href="#">Financiamento</a></li>
                             <li><a class="dropdown-item" href="#">Seguro</a></li>
                             <li><a class="dropdown-item" href="#">Test Ride</a></li>
                         </ul>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Modelos
-                        </a>
                         <ul class="dropdown-menu">
                             <li><a class="dropdown-item" href="#">CicloMotor</a></li>
                             <li><a class="dropdown-item" href="#">Scooter</a></li>
@@ -64,7 +55,6 @@
                             <li><a class="dropdown-item" href="#">Trail</a></li>
                             <li><a class="dropdown-item" href="#">Esportiva</a></li>
                         </ul>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Sobre nós</a>
                     </li>
@@ -74,9 +64,9 @@
     </nav>
   </header>
 
-  <main class="container mt-3">
-    <div class="card text-center fundocard">
-      <div class="card-header mb-4 linha">
+  <main class="container mt-3 ">
+    <div class="card text-center fundocard ">
+      <div class="card-header mb-3 linha">
         <ul class="nav nav-pills card-header-pills justify-content-center">
           <li class="nav-item bg">
             <a id="btnNovas" class="nav-link active bg-custom me-2" aria-current="true" href="#">Novas</a>
@@ -89,46 +79,8 @@
           </li>
         </ul>
       </div>
-      <section class="container">
+      <section class="container mb-2 mt-2 aumento">
         <div class="row justify-content-center" id="cardContainer">
-          <div class="col-md-4">
-            <div class="card imagem mb-3">
-              <img id="cardImage1" src="Moto/XRE.png" class="card-img-top" alt="...">
-              <div >
-              <div class="card-body bg-custom">
-                <h5 id="cardTitle1" class="card-title">Modelo XRE 300</h5>
-                <p id="cardText1" class="card-text text-dark"> Motor: 300cc Flex, injeção eletrônica
-                  Suspensão: Amortecimento de longo curso para qualquer terreno
-                   Tanque: 13,8L para viagens mais longas
-                   Ideal para: Estradas, trilhas e uso urbano</p>
-              </div>
-            </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card imagem mb-3">
-              <img id="cardImage2" src="Moto/Lander.png" class="card-img-top" alt="...">
-              <div class="card-body bg-custom">
-                <h5 id="cardTitle2" class="card-title">Modelo XTZ 250 Lander</h5>
-                <p id="cardText2" class="card-text text-dark">Motor: 250cc, injeção eletrônica
-                   Suspensão: Longo curso, ideal para encarar qualquer desafio
-                   Tanque: 13,6L para rodar sem problemas
-                   Ideal para: Trilhas, estradas e uso urbano</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card imagem mb-3">
-              <img id="cardImage3" src="Moto/versys.png" class="card-img-top" alt="...">
-              <div class="card-body bg-custom">
-                <h5 id="cardTitle3" class="card-title">Modelo Vesys 300</h5>
-                <p id="cardText3" class="card-text text-dark">Motor: 300cc bicilíndrico, injeção eletrônica
-                  Suspensão: Ajustada para estabilidade e conforto
-                  Tanque: 17L para maior autonomia
-                  Ideal para: Viagens, estrada e uso urbano</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
     </div>

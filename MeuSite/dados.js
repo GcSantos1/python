@@ -3,57 +3,139 @@ const dados = {
     card1: {
       imagem: "Moto/XRE.png",
       titulo: "Modelo XRE 300",
-      texto: " Motor: 300cc Flex, injeção eletrônica\n" +
-             " Suspensão: Amortecimento de longo curso para qualquer terreno\n" +
-             " Tanque: 13,8L para viagens mais longas\n" +
-             " Ideal para: Estradas, trilhas e uso urbano"
+      texto: [
+        "Motor: 300cc injeção eletrônica",
+        "Suspensão: Amortecimento para qualquer terreno",
+        "Tanque: 13,8L para viagens mais longas",
+        "Ideal para: Estradas, trilhas e urbano"
+      ]
     },
     card2: {
       imagem: "Moto/Lander.png",
       titulo: "Modelo XTZ 250 Lander",
-      texto: "Motor: 250cc, injeção eletrônica\n"+ "Suspensão: Longo curso, ideal para encarar qualquer desafio\n"+ "Tanque: 13,6L para rodar sem problemas\n"+"Ideal para: Trilhas, estradas e uso urbano"
+      texto: [
+        "Motor: 250cc, injeção eletrônica",
+        "Suspensão: Longo curso, ideal para encarar qualquer desafio",
+        "Tanque: 13,6L para rodar sem problemas",
+        "Ideal para: Trilhas, estradas e uso urbano"
+      ]
     },
     card3: {
       imagem: "Moto/versys.png",
-      titulo: "Modelo CRF 250F",
-      texto: "Motor: 300cc bicilíndrico, injeção eletrônica\n"+
-      "Suspensão: Ajustada para estabilidade e conforto "+
-      "Tanque: 17L para maior autonomia\n"+
-      "Ideal para: Viagens, estrada e uso urbano"
+      titulo: "Modelo Versys 300",
+      texto: [
+        "Motor: 300cc bicilíndrico, injeção eletrônica",
+        "Suspensão: Ajustada para estabilidade e conforto",
+        "Tanque: 17L para maior autonomia",
+        "Ideal para: Viagens, estrada e uso urbano"
+      ]
     }
   },
   seminovas: {
     card1: {
-      imagem: "Moto/moto 4 branca.jpg",
-      titulo: "Modelo Seminova 1",
-      texto: "Descrição da moto seminova 1."
+      imagem: "Moto/pcx.png",
+      titulo: "Modelo PCX",
+      texto: [
+        "⚙️ Motor: 160cc eSP+, injeção eletrônica, arrefecimento",
+        "🛞 Suspensão: Ajustada para conforto e estabilidade",
+        "⛽ Tanque: 8L para mais autonomia no dia a dia",
+        "🛣️ Ideal para: Mobilidade urbana com praticidade e economia"
+      ]
     },
     card2: {
-      imagem: "Moto/seminova2.jpg",
-      titulo: "Modelo Seminova 2",
-      texto: "Descrição da moto seminova 2."
+      imagem: "Moto/adv.png",
+      titulo: "Modelo ADV",
+      texto: [
+        "⚙️ Motor: 160cc eSP+, injeção eletrônica, arrefecimento a ar",
+        "🛞 Suspensão: Longo curso, ideal para diferentes terrenos",
+        "⛽ Tanque: 8L para mais autonomia e liberdade",
+        "🛣️ Ideal para: Aventura, mobilidade urbana e passeios fora de estrada"
+      ]
     },
     card3: {
-      imagem: "Moto/seminova3.jpg",
-      titulo: "Modelo Seminova 3",
-      texto: "Descrição da moto seminova 3."
+      imagem: "Moto/neo.png",
+      titulo: "Modelo Neo",
+      texto: [
+        "⚙️ Motor: 150cc, injeção eletrônica, arrefecimento a ar",
+        "🛞 Suspensão: Ideal para conforto e estabilidade nas ruas",
+        "⛽ Tanque: 6,6L para maior autonomia urbana",
+        "🛣️ Ideal para: Mobilidade urbana com estilo e praticidade"
+      ]
     }
   },
   promocoes: {
     card1: {
-      imagem: "Moto/promocao1.jpg",
-      titulo: "Modelo Promoção 1",
-      texto: "Descrição da moto em promoção 1."
+      imagem: "Moto/factor.png",
+      titulo: "Modelo Factor 150",
+      texto: [
+        "⚙️ Motor: 150cc, injeção eletrônica, arrefecimento a ar",
+        "🛞 Suspensão: Adaptada para o conforto no dia a dia",
+        "⛽ Tanque: 12,4L para maior autonomia na cidade",
+        "🛣️ Ideal para: Mobilidade urbana, agilidade e economia"
+      ]
     },
     card2: {
-      imagem: "Moto/promocao2.jpg",
-      titulo: "Modelo Promoção 2",
-      texto: "Descrição da moto em promoção 2."
+      imagem: "Moto/titan.png",
+      titulo: "Modelo Titan 160",
+      texto: [
+        "⚙️ Motor: 160cc, injeção eletrônica, arrefecimento a ar",
+        "🛞 Suspensão: Equipada para conforto e estabilidade",
+        "⛽ Tanque: 13,2L para maior autonomia no dia a dia",
+        "🛣️ Ideal para: Mobilidade urbana, desempenho e economia"
+      ]
     },
     card3: {
-      imagem: "Moto/promocao3.jpg",
-      titulo: "Modelo Promoção 3",
-      texto: "Descrição da moto em promoção 3."
+      imagem: "Moto/fact.png",
+      titulo: "Modelo Factor 125",
+      texto: [
+        "⚙️ Motor: 125cc, injeção eletrônica, arrefecimento a ar",
+        "🛞 Suspensão: Ajustada para o conforto e agilidade na cidade",
+        "⛽ Tanque: 12L para maior autonomia no trânsito urbano",
+        "🛣️ Ideal para: Mobilidade urbana, economia e praticidade"
+      ]
     }
   }
 };
+
+// Função para atualizar os cards com base na categoria selecionada
+function atualizarCards(categoria) {
+  const cardContainer = document.getElementById("cardContainer");
+  cardContainer.innerHTML = ""; // Limpa o conteúdo atual
+
+  for (let i = 1; i <= 3; i++) {
+    const cardData = dados[categoria][`card${i}`];
+
+    const cardHTML = `
+      <div class="col-md-4">
+        <div class="card imagem mb-3">
+          <img src="${cardData.imagem}" class="card-img-top" alt="${cardData.titulo}">
+          <div class="card-body bg-custom">
+            <h5 class="card-title">${cardData.titulo}</h5>
+            <ul>${cardData.texto.map(item => `<li>${item}</li>`).join("")}</ul>
+          </div>
+        </div>
+      </div>
+    `;
+
+    cardContainer.innerHTML += cardHTML;
+  }
+}
+
+// Event listeners para os botões
+document.getElementById("btnNovas").addEventListener("click", function (e) {
+  e.preventDefault();
+  atualizarCards("novas");
+});
+
+document.getElementById("btnSeminovas").addEventListener("click", function (e) {
+  e.preventDefault();
+  atualizarCards("seminovas");
+});
+
+document.getElementById("btnPromocoes").addEventListener("click", function (e) {
+  e.preventDefault();
+  atualizarCards("promocoes");
+});
+
+// Inicializa com a categoria "novas"
+atualizarCards("novas");

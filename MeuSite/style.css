@@ -46,7 +46,6 @@ p{
     background: linear-gradient(to right, #656565, #020202);
     box-shadow: 0 0 5px black;
     align-content: center;
-    
 }
 
 .linha{
@@ -60,11 +59,60 @@ p{
     margin-left: 10px;
     margin-right: 10px;
 
+}
+.accordion-body {
+    min-width: 100%;
+}
+.card-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+.textocard{
+    white-space: normal;
 
 }
+
+.carroselborder{
+    border-radius: 10px;
+}
+
+
 .fundocard{
     background-color: #8d8d8d;
+    
 }
+
+.aumento{
+    padding-right: 35px;
+}
+
+.card-body ul li {
+    color: black; 
+    font-weight: 700;
+    
+  }
+
+  .card-title {
+    color: black;
+    font-weight: 800;
+  }
+
+.a{
+    text-shadow: 0px 4px 10px #d56728;
+    color: #d56728;
+    border-bottom: #d56728 1px solid;
+}
+
+.custom-gap {
+    gap: 2rem; /* Espaçamento personalizado */
+    
+  }
+
 
 .bg-custom {
     background-color: #d56728 !important;
@@ -88,6 +136,7 @@ p{
 
   }
 
+
   .card-img-top {
     width: 100%; /* Garante que a imagem ocupe toda a largura do card */
     height: 300px; /* Define uma altura fixa para todas as imagens */
@@ -102,6 +151,7 @@ p{
     color: #fff !important;
     font-size: 18px;
     align-content: center;
+   
 }
 
 .nav-link:hover {
@@ -131,6 +181,7 @@ p{
     box-shadow: 0 1px 3px rgba(138, 27, 27, 0.12), 0 1px 2px rgba(0,0,0,0.24);
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 #left-zone {
@@ -138,6 +189,7 @@ p{
     height: 100%;
     background: #fff;
     z-index: 2;
+    border-radius: 10px;
 }
 
 .list {
@@ -145,15 +197,18 @@ p{
     padding: 0;
     margin: 0;
     height: 100%;
+    border-radius: 10px;
 }
 
 .item {
     height: 50%;
     position: relative;
+    border-radius: 10px;
 }
 
 .item input[type="radio"] {
     display: none;
+    border-radius: 10px;
 }
 
 .item label {
@@ -167,6 +222,7 @@ p{
     font-size: 18px;
     color: #d56728;
     left: 35px;
+    border-radius: 10px;
 }
 
 /* Ícones laterais */
@@ -177,20 +233,20 @@ p{
     left: 28%;
     top: 50%;
     transform: translateY(-50%);
-    width: 100px;
+    width: 120px;
     height: 100px;
     background-size: cover;
     background-position: center;
-    border-radius: 8px;
-    border: 2px solid #020202;
+    border-radius: 10px;
+    /* border: 2px solid #020202; */
     
     
 }
 
 
 
-.label_azul::before { background-image: url('Moto/Moto\ 1\ azul.avif'); }
-.label_vermelha::before { background-image: url('Moto/Moto\ 2\ vermelha.avif'); }
+.label_azul::before { background-image: url('Moto/factor.png'); }
+.label_vermelha::before { background-image: url('Moto/titan.png'); }
 
 /* Conteúdo do Carrossel */
 .content {
@@ -206,16 +262,22 @@ p{
     visibility: hidden;
     opacity: 0;
     transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    border-radius: 10px;
+    
     
 }
 
 .picto {
     flex: 1;
-    max-width: 400px;
+    max-width: 500px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
+  
+    
+    
 }
 
 .picto img {
@@ -224,18 +286,21 @@ p{
     max-height: 300px;
     object-fit: contain;
     border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    /* box-shadow: 0 5px 15px rgba(0,0,0,0.2); */
+    
 }
 
 .content-text {
     flex: 1;
     padding: 20px;
+    border-radius: 10px;
 }
 
 .content-text h3 {
     color: #d56728;
     font-size: 28px;
     margin-bottom: 20px;
+    border-radius: 10px;
 
 }
 
@@ -243,20 +308,24 @@ p{
     font-size: 16px;
     line-height: 1.8;
     color: #fff;
+    border-radius: 10px;
 }
 
 /* Estado Ativo */
 input[type="radio"]:checked ~ label {
     opacity: 1 !important;
     color: #d56728 !important;
-    background: rgba(213, 103, 40, 0.05);
+    background: rgba(213, 103, 40, 0.2) ;
     font-weight: bold;
+    border-radius: 10px;
+    
 }
 
 input[type="radio"]:checked ~ .content {
     visibility: visible;
     opacity: 1;
     animation: slideIn 0.6s ease;
+    border-radius: 10px;
 }
 
 @keyframes slideIn {
@@ -264,13 +333,6 @@ input[type="radio"]:checked ~ .content {
     to { transform: translateX(0); opacity: 1; }
 }
 
-/* #middle-border {
-    width: 2px;
-    background: #020202;
-    height: 80%;
-    margin: auto 0;
-    z-index: 1;
-} */
 
 /* Responsivo */
 @media (max-width: 768px) {
