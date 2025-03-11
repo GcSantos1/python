@@ -1,0 +1,178 @@
+Código CSS:
+
+
+/* Estilos principais */
+.fruit-carousel {
+    display: flex;
+    min-height: 400px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* Menu lateral */
+.fruit-menu {
+    flex: 0 0 250px;
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 10px 0 0 10px;
+}
+
+.fruit-list {
+    list-style: none;
+}
+
+.fruit-item {
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.fruit-item:hover {
+    background: #e9ecef;
+}
+
+.fruit-item.active {
+    background: #4a90e2;
+    color: white;
+}
+
+/* Conteúdo principal */
+.fruit-content {
+    flex: 1;
+    padding: 2rem;
+    position: relative;
+}
+
+.content-panel {
+    display: none;
+    animation: fadeIn 0.5s ease;
+}
+
+.content-panel.active {
+    display: block;
+}
+
+.fruit-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.fruit-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.fruit-description {
+    color: #666;
+    line-height: 1.6;
+    margin-top: 1rem;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .fruit-carousel {
+        flex-direction: column;
+    }
+
+    .fruit-menu {
+        flex: none;
+        border-radius: 10px 10px 0 0;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+Código HTML:
+
+<section class="fruit-carousel">
+        <nav class="fruit-menu">
+            <ul class="fruit-list">
+                <li class="fruit-item active" data-fruit="strawberry">🍓 Strawberry</li>
+                <li class="fruit-item" data-fruit="banana">🍌 Banana</li>
+                <li class="fruit-item" data-fruit="apple">🍎 Apple</li>
+                <li class="fruit-item" data-fruit="orange">🍊 Orange</li>
+            </ul>
+        </nav>
+
+        <article class="fruit-content">
+            <!-- Conteúdo do Morango -->
+            <div class="content-panel active" id="strawberry">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍓</div>
+                    <h2>Strawberry</h2>
+                    <p class="fruit-description">
+                        Strawberries are bright red, juicy, and sweet. They are an excellent source of vitamin C.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conteúdo da Banana -->
+            <div class="content-panel" id="banana">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍌</div>
+                    <h2>Banana</h2>
+                    <p class="fruit-description">
+                        Bananas are elongated, edible fruits produced by several kinds of large herbaceous plants.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conteúdo da Maçã -->
+            <div class="content-panel" id="apple">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍎</div>
+                    <h2>Apple</h2>
+                    <p class="fruit-description">
+                        An apple is an edible fruit produced by an apple tree (Malus domestica).
+                    </p>
+                </div>
+            </div>
+
+            <!-- Conteúdo da Laranja -->
+            <div class="content-panel" id="orange">
+                <div class="fruit-card">
+                    <div class="fruit-icon">🍊</div>
+                    <h2>Orange</h2>
+                    <p class="fruit-description">
+                        The orange is the fruit of various citrus species in the family Rutaceae.
+                    </p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+Código js:
+
+<script>
+        // Funcionalidade básica do carrossel
+        document.querySelectorAll('.fruit-item').forEach(item => {
+            item.addEventListener('click', function() {
+                // Remove a classe active de todos os itens
+                document.querySelectorAll('.fruit-item').forEach(i => i.classList.remove('active'));
+                // Adiciona a classe active ao item clicado
+                this.classList.add('active');
+                
+                // Esconde todos os painéis de conteúdo
+                document.querySelectorAll('.content-panel').forEach(panel => {
+                    panel.classList.remove('active');
+                });
+                
+                // Mostra o painel correspondente
+                const target = this.getAttribute('data-fruit');
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>

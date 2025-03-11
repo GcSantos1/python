@@ -157,7 +157,7 @@ p{
 
 /* Muda a cor de fundo do conteúdo do acordeão */
 .accordion-body {
-    background-color: #e9f5e9; /* Cor de fundo do conteúdo */
+    background-color: #8d8d8d; /* Cor de fundo do conteúdo */
     padding: 20px; /* Aumenta o espaçamento interno (opcional) */
 }
 
@@ -196,13 +196,10 @@ p{
 
   .card-img-top {
     width: 100%; /* Garante que a imagem ocupe toda a largura do card */
-    height: 200px; /* Define uma altura fixa para todas as imagens */
+    height: 300px; /* Define uma altura fixa para todas as imagens */
     object-fit: cover; /* Ajusta a imagem para preencher a área sem distorcer */
     display: block;
   } 
-
-
-
 
   /* Estilo para o card clicável */
 .card {
@@ -464,4 +461,66 @@ input[type="radio"]:checked ~ .content {
 
 .footer-social img:hover {
     transform: translateY(-5px);
+}
+
+
+
+
+.container{
+    padding: 20px;
+    max-width: 800px;
+    
+    padding: 30px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    
+}
+
+.form-group {
+    margin-bottom: 15px;
+     
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.btn-submit {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-submit:hover {
+    background-color: #45a049;
+}
+
+
+/* Estilo específico para checkboxes */
+.form-group input[type="checkbox"] {
+    width: auto; /* Remove a largura 100% */
+    margin-right: 8px; /* Espaçamento entre o checkbox e o texto */
+    vertical-align: middle; /* Alinhamento vertical */
+}
+
+/* Ajuste no label do checkbox */
+.form-group label[for="termos"] {
+    display: inline-block; /* Deixa o label na mesma linha */
+    vertical-align: middle; /* Alinhamento vertical */
+    font-weight: normal; /* Opcional: deixa o texto com peso normal */
 }
