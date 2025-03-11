@@ -109,9 +109,66 @@ p{
 }
 
 .custom-gap {
-    gap: 2rem; /* Espaçamento personalizado */
+    gap: 2rem; 
     
   }
+
+.acordeon{
+    text-align: center !important;
+    align-items: center !important;
+}
+
+.accordion-header {
+    display: flex; /* Ativa o flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza o texto */
+    font-weight: bold; /* Negrito (opcional) */
+    width: 100%; /* Garante que ocupe toda a largura */
+}
+
+
+.accordion-button {
+    display: flex !important;
+    justify-content: center !important; /* Centraliza o texto */
+    align-items: center !important;
+    text-align: center !important;
+    width: 100% !important;
+    position: relative; /* Permite ajustar a posição da setinha */
+    font-weight: bold;
+}
+
+/* Posiciona a setinha no canto direito */
+.accordion-button::after {
+    position: absolute;
+    right: 20px; /* Distância da borda direita */
+}
+
+/* Muda a cor de fundo e do texto dos botões */
+.accordion-button:not(.collapsed) {
+    background-color: #d56728; /* Cor de fundo quando aberto */
+    color: #333; /* Cor do texto quando aberto */
+}
+
+.accordion-button.collapsed {
+    background-color: #d56728; /* Cor de fundo quando fechado */
+    color: white; /* Cor do texto quando fechado */
+}
+
+/* Muda a cor de fundo do conteúdo do acordeão */
+.accordion-body {
+    background-color: #e9f5e9; /* Cor de fundo do conteúdo */
+    padding: 20px; /* Aumenta o espaçamento interno (opcional) */
+}
+
+/* Adiciona uma borda ao acordeão */
+.accordion-item {
+    border: 1px solid #ddd; /* Borda sutil */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+    border-radius: 8px; /* Bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+}
+
 
 
 .bg-custom {
@@ -139,10 +196,29 @@ p{
 
   .card-img-top {
     width: 100%; /* Garante que a imagem ocupe toda a largura do card */
-    height: 300px; /* Define uma altura fixa para todas as imagens */
+    height: 200px; /* Define uma altura fixa para todas as imagens */
     object-fit: cover; /* Ajusta a imagem para preencher a área sem distorcer */
     display: block;
   } 
+
+
+
+
+  /* Estilo para o card clicável */
+.card {
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o vídeo no modal */
+.ratio-16x9 {
+    background-color: #000;
+}
 
 
 
