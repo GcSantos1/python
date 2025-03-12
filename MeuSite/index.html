@@ -9,7 +9,7 @@
     <link rel="icon" type="image/x-icon" href="Moto/logo nova-Photoroom.png">
     <link rel="stylesheet" href="style.css">
 
-    <title>Concessionaria</title>
+    <title>MotoVibe</title>
 </head>
 <body class="fundo">
   <header>
@@ -43,9 +43,8 @@
                             Serviços
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Manutenção</a></li>
-                            <li><a class="dropdown-item" href="#">Seguro</a></li>
-                            <li><a class="dropdown-item" href="#">Test Ride</a></li>
+                            <li><a class="dropdown-item" href="manuntencao.html">Manutenção</a></li>
+                            <li><a class="dropdown-item" href="seguro.html">Seguro</a></li>
                         </ul>
                     </li>
                         <ul class="dropdown-menu">
@@ -68,44 +67,117 @@
         <figure>
           <img src="Moto/banner - Copia.jpg" width="100%">
           <div class ="linha"></div>
-          <p class="titulo">Confira nossas principais promoções</p>
+          <p class="titulo">Confira nossos serviços</p>
         </figure>
       </section>
      
-      <h2 class="subtitulo">Motos a venda</h2>
-      <div id="scene" class="carroselborder">
-          <div id="left-zone">
-              <ul class="list fundo " >
-                  <li class="item fundo">
-                      <input type="radio" id="radio_azul" name="basic_carousel" checked>
-                      <label for="radio_azul" class="label_azul fundo">Yamaha Factor 150</label>
-                      <div class="content content_azul fundo" >
-                          <div class="picto ">
-                              <img src="Moto/factor.png" alt="Moto Azul">
-                          </div>
-                          <div class="content-text ">
-                              <a href="motos.html" class="a"><h3>Modelo Factor 150</h3></a>
-                              <p>Yamaha Factor 150: A escolha certa para o seu dia a dia! 🏍️💨</p>
-                          </div>
-                      </div>
-                  </li>
-                  
-                  <li class="item fundo" >
-                      <input type="radio" id="radio_vermelha" name="basic_carousel">
-                      <label for="radio_vermelha" class="label_vermelha fundo "href="motos.html">Honda Titan 160cc</label>
-                      <div class="content content_vermelha fundo">
-                          <div class="picto ">
-                              <img src="Moto/titan.png" alt="Moto Titan 160cc">
-                          </div>
-                          <div class="content-text ">
-                              <h3>Modelo Titan 160</h3>
-                              <p>Honda Titan 160: A força que você precisa no seu dia a dia! 🏍️💥</p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-          </div>
-      </div>
+      <h2 class="subtitulo"> tudo para atender você da melhor forma!</h2>
+      <section class="fruit-carousel">
+        <nav class="fruit-menu">
+            <ul class="fruit-list">
+                <li class="fruit-item active" data-fruit="strawberry">Motos</li>
+                <li class="fruit-item" data-fruit="banana"> Modelos</li>
+                <li class="fruit-item" data-fruit="apple"> Serviços</li>
+                <li class="fruit-item" data-fruit="orange"> Seguro</li>
+            </ul>
+        </nav>
+    
+        <article class="fruit-content">
+            
+            <div class="content-panel active" id="strawberry">
+                <a href="motos.html" style="text-decoration: none; color: inherit;">
+                <div class="fruit-card">
+                    <div class="fruit-icon"></div>
+                    
+                    <figure class="container">
+                        <img src="Moto/iconecarroselmoto.png" alt="Descrição da imagem" class="imagee">
+                        <figcaption class="textt">Motos</figcaption> 
+                    </figure>
+                    <br><h3>🏍️ Acelere sua paixão sobre duas rodas! 🏍️<br></h3>
+                    <p class="fruit-description">
+                        Encontre a moto perfeita para o seu estilo de vida! Seja para o dia a dia, viagens ou aventuras off-road, temos as melhores opções para você. Modelos com potência, economia e tecnologia de ponta, prontos para transformar cada trajeto em uma experiência única.
+                        <ul>
+                        🔹 Diversos modelos e marcas <br>
+                        🔹 Financiamento facilitado  <br>
+                        🔹 Garantia e suporte especializado<br>
+                        </ul>
+                        Escolha sua próxima moto e sinta a liberdade na estrada! 🚀🔥
+                    </p>
+                </div>
+            </div>
+        </a>
+    
+          
+            <div class="content-panel" id="banana">
+                <a href="modelos.html" style="text-decoration: none; color: inherit;">
+                <div class="fruit-card">
+                    <div class="fruit-icon"></div>
+                    <figure class="container">
+                        <img src="Moto/iconecarroselmodelo.png" alt="Descrição da imagem" class="imagee">
+                        <figcaption class="textt">Modelos</figcaption>
+                    </figure>
+                    <p class="fruit-description">
+                        <br><h3>🏍️ Encontre o modelo ideal para você! 🏍️</h3><br>
+
+                        De scooters ágeis para a cidade a motos de alta cilindrada para aventuras, temos o modelo perfeito para cada necessidade. Tecnologia, desempenho e estilo reunidos para transformar sua experiência sobre duas rodas!
+                        <ul>
+                        🔹 Scooters, street, trails e esportivas <br>
+                        🔹 Modelos para cidade, estrada e off-road<br>
+                        🔹 Conforto, potência e economia em um só lugar<br>
+                        </ul>
+                        Escolha sua moto e acelere para novas conquistas! 🚀🔥
+                    </p>
+                </div>
+            </div>
+        </a>
+           
+            <div class="content-panel" id="apple">
+                <a href="manuntencao.html" style="text-decoration: none; color: inherit;">
+                <div class="fruit-card">
+                    <div class="fruit-icon"></div>
+                    <figure class="container">
+                        <img src="Moto/iconecarroselmanuntencao.png" alt="Descrição da imagem" class="imagee">
+                        <figcaption class="textt">Serviços</figcaption>
+                    </figure>
+                    <p class="fruit-description">
+                        <br><h3>🔧 Serviços especializados para sua moto! 🔧</h3><br>
+
+                        Mantenha sua moto sempre em alto desempenho com nossos serviços especializados. Do check-up completo à manutenção preventiva, cuidamos de cada detalhe para garantir sua segurança e o melhor rendimento do seu veículo.
+                            <ul>
+                        🔹 Revisões e manutenções<br>
+                        🔹 Peças originais e acessórios<br>
+                        🔹 Atendimento rápido e especializado<br>
+                            </ul>    
+                        Agende seu serviço e rode com tranquilidade! 🏍️✅
+                    </p>
+                </div>
+            </div>
+        </a>
+           
+            <div class="content-panel" id="orange">
+                <a href="seguro.html" style="text-decoration: none; color: inherit;">
+                <div class="fruit-card">
+                    <div class="fruit-icon"></div>
+                    <figure class="container">
+                        <img src="Moto/iconecarroselseguro.png" alt="Descrição da imagem" class="imagee">
+                        <figcaption class="textt">Seguro</figcaption>
+                    </figure>
+                    <p class="fruit-description">
+                        <br><h3>🛡️ Proteção completa para sua moto! 🛡️</h3><br>
+
+                            Garanta tranquilidade e segurança para curtir cada viagem sem preocupações. Com nossos seguros, sua moto fica protegida contra imprevistos, oferecendo cobertura ideal para suas necessidades.
+                            <ul>
+                            🔹 Planos personalizados<br>
+                            🔹 Cobertura contra roubo, furto e acidentes<br>
+                            🔹 Assistência 24h para sua segurança<br>
+                            </ul>
+                            Contrate agora e pilote com mais segurança! 🏍️✅
+                    </p>
+                </div>
+            </div>
+        </a>
+        </article>
+    </section>
     </main>
 
     <footer class="footer bg-dark" >
@@ -143,5 +215,6 @@
 </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="carrossel.js"></script>
 </body>
 </html>
