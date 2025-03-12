@@ -4,30 +4,30 @@ const dados = {
       imagem: "Imagens/Motos/Trail/xre.png",
       titulo: "Modelo XRE 300",
       texto: [
-        "Motor: 300cc injeção eletrônica",
-        "Suspensão: Amortecimento para qualquer terreno",
-        "Tanque: 13,8L para viagens mais longas",
-        "Ideal para: Estradas, trilhas e urbano"
+        "⚙️Motor: 300cc injeção eletrônica",
+        "🛞 Suspensão: Amortecimento para encarar qualquer terreno",
+        "⛽ Tanque: 13,8L para viagens mais longas",
+        "🛣️ Ideal para: Estradas, trilhas e uso urbano "
       ]
     },
     card2: {
       imagem: "Imagens/Motos/Trail/Lander.png",
       titulo: "Modelo XTZ 250 Lander",
       texto: [
-        "Motor: 250cc, injeção eletrônica",
-        "Suspensão: Longo curso, ideal para encarar qualquer desafio",
-        "Tanque: 13,6L para rodar sem problemas",
-        "Ideal para: Trilhas, estradas e uso urbano"
+        "⚙️Motor: 250cc, injeção eletrônica",
+        "🛞 Suspensão: Longo curso, ideal para encarar qualquer desafio",
+        "⛽ Tanque: 13,6L para rodar sem problemas",
+        "🛣️ Ideal para: Trilhas, estradas e uso urbano"
       ]
     },
     card3: {
       imagem: "Imagens/Motos/Trail/versys.png",
       titulo: "Modelo Versys 300",
       texto: [
-        "Motor: 300cc bicilíndrico, injeção eletrônica",
-        "Suspensão: Ajustada para estabilidade e conforto",
-        "Tanque: 17L para maior autonomia",
-        "Ideal para: Viagens, estrada e uso urbano"
+        "⚙️Motor: 300cc bicilíndrico, injeção eletrônica",
+        "🛞 Suspensão: Ajustada para estabilidade e conforto",
+        "⛽ Tanque: 17L para maior autonomia",
+        "🛣️ Ideal para: Viagens, estrada e uso urbano"
       ]
     }
   },

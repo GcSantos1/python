@@ -46,6 +46,8 @@ p{
 .imagem{
     width: 100%;
     border: 1px
+    
+    
 }
 
 /* Navbar */
@@ -116,6 +118,8 @@ p{
 
 .aumento{
     padding-right: 35px;
+    
+    
 }
 
 .card-body ul li {
@@ -260,12 +264,14 @@ p{
     height: 300px; /* Define uma altura fixa para todas as imagens */
     object-fit: cover; /* Ajusta a imagem para preencher a área sem distorcer */
     display: block;
+
   } 
 
   /* Estilo para o card clicável */
 .card {
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
 }
 
 .card:hover {
