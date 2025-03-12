@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nota Fiscal</title>
+    <style>
+        .nota-fiscal {
+            width: 300px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 2px solid #000;
+            border-radius: 10px;
+            background-color: #f9f9f9;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            font-family: Arial, sans-serif;
+        }
+
+        .nota-fiscal h2 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .dados-nota {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .dados-nota li {
+            margin-bottom: 10px;
+            padding-bottom: 10px; /* Espaçamento abaixo do texto */
+            font-size: 16px;
+            color: #555;
+            border-bottom: 3px solid #202020; /* Linha separadora */
+        }
+
+        .dados-nota li:last-child {
+            border-bottom: none; /* Remove a linha do último item */
+        }
+
+        .dados-nota li strong {
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <div class="nota-fiscal">
+        <h2>Nota Fiscal</h2>
+        <ul class="dados-nota" id="dados-nota"></ul>
+    </div>
+
+    <script>
+        // Recuperar os dados do localStorage
+        const dados = JSON.parse(localStorage.getItem('notaFiscal'));
+
+        // Exibir os dados na página
+        if (dados) {
+            const listaDados = document.getElementById('dados-nota');
+            const dadosArray = [
+                { label: 'Nome', value: dados.nome },
+                { label: 'Telefone', value: dados.tel },
+                { label: 'Email', value: dados.email },
+                { label: 'Marca', value: dados.marca },
+                { label: 'Modelo', value: dados.modelo },
+                { label: 'Placa', value: dados.placa },
+                { label: 'Serviço', value: dados.servico },
+                { label: 'Data', value: dados.data },
+                { label: 'Hora', value: dados.hora }
+            ];
+
+            dadosArray.forEach(item => {
+                const li = document.createElement('li');
+                li.innerHTML = `<strong>${item.label}:</strong> ${item.value}`;
+                listaDados.appendChild(li);
+            });
+        } else {
+            document.body.innerHTML = '<p>Nenhum dado encontrado.</p>';
+        }
+    </script>
+</body>
+</html>
