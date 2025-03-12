@@ -13,13 +13,20 @@ header {
 
 .subtitulo {
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     color: #fff;
     margin: 30px 0;
+    font-weight: bold;
 }
 .fundo{
     background: linear-gradient(#656565, #020202)
     
+}
+
+.mapa{
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
 }
 
 
@@ -187,6 +194,40 @@ p{
     margin-bottom: 10px; /* Espaçamento entre os itens */
     border-radius: 8px; /* Bordas arredondadas */
     overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
+}
+
+
+
+.btn-custom {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid #d56728; /* Borda laranja */
+    color: #d56728; /* Texto laranja */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.btn-custom:hover {
+    background-color: #d56728; /* Fundo laranja ao passar o mouse */
+    color: white; /* Texto branco ao passar o mouse */
+}
+
+
+
+.btn-customm {
+    background-color: transparent; /* Fundo transparente */
+    border: 2px solid rgb(244, 71, 71); /* Borda laranja */
+    color: rgb(244, 71, 71); /* Texto laranja */
+    transition: background-color 0.3s, color 0.3s; /* Transição suave */
+    padding: 10px 20px; /* Espaçamento interno */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro */
+}
+
+.btn-customm:hover {
+    background-color: rgb(244, 71, 71); /* Fundo laranja ao passar o mouse */
+    color: white; /* Texto branco ao passar o mouse */
 }
 
 
